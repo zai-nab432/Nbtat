@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> نباتات داخلية</title>
+
+<link href="plants.css" rel="stylesheet" type="text/css">
+<link href="index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>	
+<header>
+	<img src="imges/logo.png" width="117" height="118" alt="logo"/>
+	<h2>موقع لعرض نباتات</h2>
+	<div class="topnav">
+   <a href="help center.html">مركز المساعدة</a>
+   <a href="accessories.html"> من نحن؟</a>
+   <a href="show of the week.html">عرض الاسبوع</a>
+   <a href="plants.html">نباتات داخلية</a>
+   <a class="active" href="index.html">الصفحة الرئيسية</a>
+</div>
+</header>
+	<h2 class="br" style="text-align:center">أكثر النباتات مبيعًا</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="imges/agtdvh.jpg" style="width:80%" alt="vi">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="imges/زاميا.jpg" style="width:80%" alt="za">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="imges/الفيكس.jpg" style="width:80%" alt="">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="imges/نبتة الببروميا.png" style="width:80%" alt="">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="imges/نبتة الزاميا.png" style="width:80%" alt="">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="imges/نبتة الدافنباخيا.png" style="width:80%" alt="">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <h2 id="caption"></h2>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="imges/agtdvh.jpg" alt="شفليرا" class="demo cursor" style="width:90%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="imges/زاميا.jpg" style="width:85%" onclick="currentSlide(2)" alt="الزاميا">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="imges/الفيكس.jpg" style="width:90%" onclick="currentSlide(3)" alt="الفيكس">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="imges/نبتة الببروميا.png" style="width:90%" onclick="currentSlide(4)" alt="البيروميا">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="imges/نبتة الزاميا.png" style="width:90%" onclick="currentSlide(5)" alt="الزاميا">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="imges/صبار جلد النمر.png" style="width:80%" onclick="currentSlide(6)" alt="جلد النمر">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	
+
+	
+<footer class="footer" style="text-align: center"> 2021 جميع حقوق الموقع محفوظة </footer>
+</body>
+</html>

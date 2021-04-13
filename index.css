@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+
+
+h2 img {
+    text-align: left;
+}
+.navb {
+    display: inline;
+    padding-left: 207px;
+    text-align: center;
+    text-transform: none;
+}
+li {
+    display: inline;
+    text-align: center;
+    padding-left: 115px;
+}
+.tb .tabl {
+    background-color: #DEDEDE;
+    width: 0px;
+}
+#accordion1 {
+}
+.ma {
+    color: #A3383A;
+    width: 1110px;
+    height: 42px;
+    font-size: 30px;
+    text-align: center;
+}
+.what h1 {
+    color: #A3383A;
+    font-size: 44px;
+}
+.tba {
+    display: table-row;
+    text-decoration: none;
+    padding-left: 174px;
+    padding-right: 192px;
+}
+.card {
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1600px){
+.topnav {
+    left: 257px;
+}
+
+}
+
+@media (max-width:1200px){
+}
+
+@media (max-width:900px){
+}
+
+@media (max-width:700px){
+.row { 
+}
+.col-md-4 {
+    width: 1125px;
+    height: 0px;
+}
+.te img {
+    padding-left: 48px;
+    padding-bottom: 40px;
+    padding-right: 77px;
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+}
+
+header {
+}
+
+logo header img {
+
+}
+.footer {
+    padding-top: 600px;
+    padding-left: 50px;
+    font-size: large;
+    padding-right: 42px;
+}
+tbody tr td {
+    text-align: center;
+    font-size: 22px;
+}
+
+
+nav ul {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+header {
+    color: #FFFFFF;
+    /* [disabled]background-color: #568558; */
+    display: inline;
+}
+tr {
+}
+table {
+    text-align: center;
+}
+
+
+
+header h2 {
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #568558;
+    display: block;
+}
+tr td img {
+    width: 1125px;
+    height: 1110px;
+}
+table {
+    background-color: #5E8865;
+    text-decoration: none;
+}
+
+
+/* CSS Document */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #5B8B60;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding-top: 14px;
+    padding-right: 33px;
+    padding-left: 33px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #E9E9E9;
+    color: #5B8B60;
+}
+
+.myDiv {
+    border: 20px dashed #437342;
+    background-color: #F2F8FB;
+    text-align: justify;
+}
